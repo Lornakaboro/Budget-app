@@ -1,2 +1,8 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="home-page">
+  <p class="home-header">BUDGET</p>
+
+  <div class="home-btns">
+    <p class="login-btn"><%= link_to 'LOG IN', new_user_session_path %></p>
+    <p class="registration-btn"><%= link_to 'SIGN UP', new_user_registration_path %></p>
+  </div>
+</div>
