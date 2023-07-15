@@ -438,3 +438,27 @@
   background-color: #3778c2;
   color: #fff;
 }
+
+.login-page {
+  text-align: center;
+}
+
+.login-header {
+  background-color: #3778c2;
+  font-weight: 500;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px 5px 10px;
+  margin-bottom: 20px;
+}
+
+.login-actions {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  background-color: #3778c2;
+  color: #fff;
+}
