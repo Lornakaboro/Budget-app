@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class EntitiesController < ApplicationController
   before_action :authenticate_user!
 
@@ -46,7 +44,7 @@ class EntitiesController < ApplicationController
       end
     else
       puts 'Not deleted'
-      flash.now[:error] = "Sorry. Couldn't delete entity."
+      flash.now[:error] = "Oops. Couldn't delete entity."
     end
   end
 

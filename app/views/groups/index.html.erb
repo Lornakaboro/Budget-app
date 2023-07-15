@@ -13,29 +13,31 @@
     <% if @groups.empty? %>
       <p class="no-categories">No categories available</p>
     <% else %>
-        <% @groups.each do |group| %>
-          <div class="category">
-            <%= link_to user_entity_path(current_user.id, group.id) do %>
-              <p class="icon">
-                <%= image_tag group.icon_url if group.icon %>
+      <% @groups.each do |group| %>
+        <div class="category">
+          <%= link_to user_entity_path(current_user.id, group.id) do %>
+            <p class="icon">
+              <% if group.icon.attached? %>
+                <%= image_tag group.icon_url %>
+              <% else %>
+                <%= image_tag "default_icon.png" %> <!-- Use a default icon if no icon is attached -->
+              <% end %>
+            </p>
+            <div class="category-details">
+              <h4 class="categories-name">
+                <%= group.name.upcase %>
+                <%= @sum_per_category %>
+              </h4>
+              <p class="category-date-created">
+                <%= group.created_at.to_date %>
               </p>
-              <div class="category-details">
-                <h4 class="categories-name">
-                  <%= group.name.upcase %>
-                  <%= @sum_per_category %>
-                </h4>
-                <p class="category-date-created">
-                  <%= group.created_at.to_date %>
-                </p>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
     <% end %>
     <div class="add-category">
       <%= link_to 'Add Category', new_user_group_path, class: "" %>
     </div>
   </div>
-
-
 </div>

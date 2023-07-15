@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Group < ApplicationRecord
   # include ImageUploader::Attachment(:icon)
 
@@ -8,4 +6,10 @@ class Group < ApplicationRecord
   has_many :entities, through: :entities_groups, dependent: :destroy
 
   validates :name, presence: true, length: { minimum: 3, too_short: 'Group name must be more than 3 characters long' }
+
+  def icon_url
+    return unless icon.attached?
+
+    Rails.application.routes.url_helpers.url_for(icon)
+  end
 end
