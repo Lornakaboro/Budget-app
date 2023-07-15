@@ -6,14 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  width: 98%;
-  margin: auto;
+
 }
 
 /* Home Page */
@@ -182,11 +175,12 @@ body {
 
 .back-to-groups {
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: rgba(0, 200, 0, 1);
   padding: 10px;
 }
 
 .back-to-groups > a {
+  width: 100%;
   text-decoration: none;
   color: #686868;
 }
@@ -416,4 +410,35 @@ body {
   color: rgb(1, 93, 1);
   background-color: rgb(223, 255, 223);
   padding: 5px;
+}
+
+.signup-form {
+  text-align: center;
+}
+
+.signup-header {
+    background-color: #3778c2;
+    font-weight: 500;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 10px 5px 10px;
+    margin-bottom: 20px;
+}
+
+.signup-actions {
+  text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    background-color: #3778c2;
+    color: #fff;
+}
+
+.signup-actions input {
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
 }
