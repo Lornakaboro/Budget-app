@@ -5,10 +5,6 @@
   font-style: normal;
 }
 
-body {
-
-}
-
 /* Home Page */
 
 .home-page {
@@ -326,6 +322,13 @@ body {
   margin-bottom: 1em;
 }
 
+.signup-actions input {
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
 /*
   Add Transaction page/form
 */
@@ -417,28 +420,21 @@ body {
 }
 
 .signup-header {
-    background-color: #3778c2;
-    font-weight: 500;
-    height: 50px;
-    text-align: center;
-    color: #fff;
-    padding: 20px 10px 5px 10px;
-    margin-bottom: 20px;
+  background-color: #3778c2;
+  font-weight: 500;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 20px 10px 5px 10px;
+  margin-bottom: 20px;
 }
 
 .signup-actions {
   text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-    background-color: #3778c2;
-    color: #fff;
-}
-
-.signup-actions input {
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
   background-color: #3778c2;
   color: #fff;
-  border: none;
-  outline: none;
 }
