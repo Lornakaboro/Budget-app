@@ -329,6 +329,8 @@
   outline: none;
 }
 
+
+
 /*
   Add Transaction page/form
 */
@@ -461,4 +463,21 @@
   text-align: center;
   background-color: #3778c2;
   color: #fff;
+}
+
+.login-actions input {
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.remember-me-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.remember-me-checkbox {
+  margin-right: 8px;
 }
