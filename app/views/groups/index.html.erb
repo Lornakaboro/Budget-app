@@ -17,11 +17,7 @@
         <div class="category">
           <%= link_to user_entity_path(current_user.id, group.id) do %>
             <p class="icon">
-              <% if group.icon.attached? %>
                 <%= image_tag group.icon_url %>
-              <% else %>
-                <%= image_tag "default_icon.png" %> <!-- Use a default icon if no icon is attached -->
-              <% end %>
             </p>
             <div class="category-details">
               <h4 class="categories-name">
