@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Group < ApplicationRecord
   # include ImageUploader::Attachment(:icon)
 
